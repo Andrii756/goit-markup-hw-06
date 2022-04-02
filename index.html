@@ -52,7 +52,7 @@
                 <div class="modal">
                     <p>
                     <form class="form">
-                        <h2>Оставьте свои данные, мы вам перезвоним</h2>
+                        <h2 class="form-text">Оставьте свои данные, мы вам перезвоним</h2>
                             <div class="form-field">
                                 <label class="form-lable" for="user-name">Имя</label>
                                 <input class="form-input" type="text" name="name" id="user-name" />
@@ -81,18 +81,28 @@
                                 </svg>
                             </div>
                             <div class="form-field">
-                                <label for="coments">Коментарий</label>
-                                <textarea name="coments" rows="5" placeholder="Введите текст"></textarea>
+                                <label class="form-lable" for="coments">Коментарий</label>
+                                <textarea class="form-textarea" name="coments" rows="5" placeholder="Введите текст"></textarea>
                             </div>
+                        <label class="checkbox-lable">
+                            <input class="checkbox" type="checkbox" name="topic" value="" />
+                            <span class="checkbox-icon-item">
+                                <svg class="checkbox-icon">
+                                    <use href="./images/sprite.svg#icon-vector" width="16" height="15">
+                                    </use>
+                                </svg>
+                            </span>
+                            Соглашаюсь с рассылкой и принимаю <span> <a class="political" href="">Условия договора</a> </span>
+                        </label>
                         
-                        <button type="submit">Отправить</button>
+                        <button class="form-button" type="submit">Отправить</button>
                     
                     </form>
                     </p>
                     <div class="btn-sector"></div>
                     <button class="btn-modal" data-modal-close>
-                        <svg class="btn-modal-icon">
-                            <use href="./images/sprite.svg#icon-close" width="11" height="11">
+                        <svg class="btn-modal-icon-item" >
+                            <use class="btn-modal-icon" href="./images/sprite.svg#icon-close" width="11" height="11">
                             </use>
                         </svg>
                     </button>
@@ -460,8 +470,8 @@
                 <h2 class="footer-title">Подпишитесь на рассылку</h3>
                     <form>
             
-                        <input type="mail" name="mail" placeholder="E-mail" />
-                        <button type="submit">Подписаться
+                        <input class="foter-input" type="mail" name="mail" placeholder="E-mail" />
+                        <button class="foter-button" type="submit">Подписаться
                         <svg class="foter-icon">
                             <use href="./images/sprite.svg#icon-telegram" width="24" height="24">
                             </use>
