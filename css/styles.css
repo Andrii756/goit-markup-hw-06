@@ -194,7 +194,7 @@ body {
 .servis-text {
   font-family: var(--primary-font-family);
   font-style: normal;
-  font-weight: 900px;
+  font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
@@ -255,6 +255,7 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
+  z-index: 2;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -271,17 +272,16 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-modal {
-  /* position: absolute;
+  position: absolute;
   top: 0;
-  right: 0; */
+  right: 0;
+  padding-top: 5px;
 
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  /*   padding-right: 17px;
-  padding-top: 3px; */
   margin-right: 8px;
   margin-top: 8px;
   fill: #000000;
@@ -292,11 +292,13 @@ body {
   fill: #188ce8;
 }
 .btn-modal-icon-item {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+.btn-modal-icon {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 20px;
-  height: 20px;
+  transform: translateX(-5%);
 }
 /* form */
 .form {
@@ -335,9 +337,11 @@ body {
   letter-spacing: 0.01em;
 }
 .form-input {
+  width: 448px;
+  height: 40px;
   padding-left: 42px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -386,17 +390,20 @@ body {
   letter-spacing: 0.03em;
 }
 .checkbox-icon {
-  padding-left: 2px;
-  padding-top: 4px;
-  width: 15px;
-  height: 16px;
+  position: relative;
+  width: 11px;
+  height: 11px;
   fill: #ffffff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.checkbox-icon-marker {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(5%, -10%);
+}
 .checkbox-icon-item {
-  width: 15px;
-  height: 16px;
-  border: 2px solid rgba(33, 33, 33, 1);
+  border: 1px solid rgba(33, 33, 33, 1);
   border-radius: 4px;
   margin-right: 9px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -404,7 +411,7 @@ body {
 .checkbox:checked + .checkbox-icon-item {
   background-color: #2196f3;
   border-radius: 4px;
-  border: 2px solid #2196f3;
+  border: 1px solid #2196f3;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .political {
@@ -438,7 +445,8 @@ body {
   margin-top: 30px;
   margin-bottom: 40px;
   padding: 10px 56px;
-  min-width: 200px;
+  width: 200px;
+  height: 50px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-button:hover,
@@ -552,6 +560,7 @@ body {
 .main-img .item {
   margin-right: 30px;
   width: 370px;
+  z-index: -1;
 }
 .main-img .item:nth-child(3n) {
   margin-right: 0px;
