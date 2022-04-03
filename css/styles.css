@@ -271,17 +271,17 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-modal {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  right: 0;
+  right: 0; */
 
-  width: 21px;
-  height: 21px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding-right: 17px;
-  padding-top: 3px;
+  /*   padding-right: 17px;
+  padding-top: 3px; */
   margin-right: 8px;
   margin-top: 8px;
   fill: #000000;
@@ -290,6 +290,13 @@ body {
 .btn-modal:focus,
 .btn-modal:hover {
   fill: #188ce8;
+}
+.btn-modal-icon-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
 }
 /* form */
 .form {
